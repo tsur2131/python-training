@@ -30,4 +30,58 @@ def part2():
     endstring=''.join(mylist)
     print mystring , "\n", endstring
 
-part2()
+def part3():
+    my_list = [1, 7, 9, 15, 2, 8]
+# begin your code here
+ 
+def even (x):
+#inpout= number 
+#output= true if the number is even and false if not 
+    if x%2==0 :
+        return  True
+    else:
+        return False
+  
+ 
+ 
+    my_list = [1, 7, 9, 15, 2, 8]
+    even_list = [my_list[x] for x in range (len(my_list)) if even(my_list[x]) ]
+    odd_list = [my_list[x] for x in range (len(my_list)) if not even(my_list[x]) ]
+    print even_list
+    print odd_list
+
+
+def part4():
+    sum=0
+    my_list = [[1,3,5],[3,2],[], [-17]]
+    for i in range(len(my_list)) :
+        for j in range (len(my_list[i])) :
+            if ( i % 2 == 0 ):
+                if(j % 2 == 0 ):
+                    sum += my_list[i][j]
+            else:
+                if(j % 2 == 1):
+                    sum +=my_list[i][j]
+                   
+    print sum
+
+
+def part5():
+    mystring1 = raw_input('Please enter a string: ')
+    mylist1 = list(mystring1.split())
+    mystring2 = raw_input('Please enter a string: ')
+    mylist2 = list(mystring2.split())
+    print 'true' if mylist1 == mylist2 else 'false'
+
+part5()
+
+
+
+
+
+
+
+
+
+
+    
