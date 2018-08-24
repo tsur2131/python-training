@@ -73,7 +73,10 @@ def part5():
     mylist2 = list(mystring2.split())
     print 'true' if mylist1 == mylist2 else 'false'
 
-part5()
+def part6() :
+    N = raw_input("please enter the max number)
+    for i in range(N):
+        if ()
 
 
 
